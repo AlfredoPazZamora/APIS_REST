@@ -1,15 +1,15 @@
-import express from "express";
-import { urlencoded, json } from 'body-parser';
-const app = express(); //INICIALIZAMOS EXPRESS Y body-parser
-//para manejar los datos en formato JSON en los POST y PUT
-app.use(urlencoded({ extended: false }));
-app.use(json());
+// import express from "express";
+// import { urlencoded, json } from 'body-parser';
+// const app = express(); //INICIALIZAMOS EXPRESS Y body-parser
+// //para manejar los datos en formato JSON en los POST y PUT
+// app.use(urlencoded({ extended: false }));
+// app.use(json());
 
-/*const express = require("express");
+const express = require("express");
 const bodyParser = require('body-parser');
 const app = express(); 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());*/
+app.use(bodyParser.json());
 
 let usuario = { //tener las propiedades
     nombre:'',
